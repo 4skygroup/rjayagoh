@@ -1,0 +1,380 @@
+/* Navbar fixe */
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 85%;
+  max-width: 1200px;
+
+  /* Fond semi-transparent sombre comme la maquette */
+  background: rgba(10, 15, 40, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  z-index: 1000;
+}
+
+/* Container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 28px;
+}
+
+/* Logo — 2 lignes, blanc */
+.logo {
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+  text-decoration: none;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* Menu */
+.nav-menu {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.85);
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.2s;
+}
+
+.nav-menu a:hover {
+  color: white;
+}
+
+/* CTA */
+.cta-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: white;
+  color: #1E1E1E;
+  padding: 10px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.cta-button:hover {
+  background: #f0f0f0;
+}
+
+.cta-avatar {
+  font-size: 14px;
+  background: #330867;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background: rgba(10, 15, 40, 0.95);
+  backdrop-filter: blur(12px);
+  list-style: none;
+  padding: 10px;
+  display: none;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  min-width: 200px;
+}
+
+.dropdown-menu li {
+  margin: 4px 0;
+}
+
+.dropdown-menu li a {
+  color: rgba(255,255,255,0.8);
+  padding: 6px 10px;
+  display: block;
+  border-radius: 8px;
+}
+
+.dropdown-menu li a:hover {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 2px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: rgba(10, 15, 40, 0.95);
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 0 0 16px 16px;
+}
+
+.mobile-menu a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: rgba(255,255,255,0.85);
+  font-family: 'Inter', sans-serif;
+}
+
+/* ---------------------- Hero Section -------------------------*/
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Overlay */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(0,0,40,0.97) 0%,
+    rgba(10,30,80,0.88) 50%,
+    rgba(0,0,40,0.97) 100%
+  );
+  z-index: 1;
+}
+
+/* Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* Badge */
+.hero-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+
+  font-size: 14px;
+  margin: 140px 0 24px 0;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+/* h1 géré dans Style.css */
+
+/* Paragraphe */
+.hero-content p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  max-width: 600px;
+  margin: 0 auto 24px;
+}
+
+/* Bouton */
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+
+  background: white;
+  color: #1E1E1E;
+
+  padding: 12px 24px;
+  border-radius: 30px;
+
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-btn-avatar {
+  font-size: 14px;
+  background: #330867;
+  color: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Badge Orias */
+.hero-orias {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 16px 0 0 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+}
+
+.orias-number {
+  color: rgba(255,255,255,0.7);
+  font-size: 12px;
+}
+
+/* Stats */
+.hero-stats {
+  margin-top: 28px;
+  margin-bottom: 10px;
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  color: rgba(255,255,255,0.85);
+}
+
+/* ---- Section bas : sidebar menu + image ---- */
+
+.hero-bottom {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-top: 40px;
+}
+
+/* Menu vertical gauche */
+.hero-sidebar-menu {
+  min-width: 260px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-sidebar-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-sidebar-menu ul li a {
+  display: block;
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  transition: 0.2s;
+}
+
+.hero-sidebar-menu ul li a:hover {
+  color: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.07);
+}
+
+/* Item actif (Construire son patrimoine) */
+.hero-sidebar-menu ul li.active a {
+  background: rgba(255,255,255,0.12);
+  color: white;
+  font-weight: 500;
+}
+
+/* Image */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+
+  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+
+/* Disclaimer */
+.hero-disclaimer {
+  position: relative;
+  z-index: 2;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  color: rgba(255,255,255,0.35);
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto 30px;
+  padding: 0 20px;
+  line-height: 1.6;
+}

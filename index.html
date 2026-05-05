@@ -1,11 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Home.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="stylesheet" href="css/Responsive.css">
+    <title>Elie Attia - Gestion de Patrimoine</title>
 </head>
 <body>
-    bonjour
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                Robin<br>  jayagoh.
+            </a>
+
+            <!-- Menu desktop -->
+            <ul class="nav-menu">
+                <li><a href="qui-suis-je.html">Qui suis-je ?</a></li>
+
+                <!-- Dropdown Solutions -->
+                <li class="dropdown">
+                    <a href="solutions.html">Solutions ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="solutions.html#assurance">Assurance vie</a></li>
+                        <li><a href="solutions.html#defiscalisation">Défiscalisation</a></li>
+                        <li><a href="solutions.html#produits">Produits structurés</a></li>
+                        <li><a href="solutions.html#portefeuille">Portefeuille sur-mesure</a></li>
+                    </ul>
+                </li>
+                <li><a href="fonctionnement.html">Fonctionnement</a></li>
+                <li><a href="medias.html">Médias</a></li>
+            </ul>
+
+            <!-- CTA -->
+            <a href="contact.html" class="cta-button">
+                <span class="cta-avatar">👤</span>
+                Planifier un rendez-vous
+            </a>
+
+            <!-- Hamburger -->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            </div>
+
+            <!-- Menu mobile -->
+            <div class="mobile-menu">
+                <a href="qui-suis-je.html">Qui suis-je ?</a>
+                <a href="solutions.html">Solutions</a>
+                <a href="fonctionnement.html">Fonctionnement</a>
+                <a href="medias.html">Médias</a>
+                <a href="contact.html" class="cta-button">Planifier un rendez-vous</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                Déjà +8 000 clients me font confiance
+            </div>
+
+            <h1>
+                Prenez en main votre avenir
+                financier avec la gestion privée
+                nouvelle génération.
+            </h1>
+
+            <p>
+                Entrepreneur dans la finance et conseiller en gestion de patrimoine depuis +10 ans,
+                je vous donne un accès exclusif aux meilleures solutions d'investissements du marché
+                pour construire et sécuriser votre avenir.
+            </p>
+
+            <a href="contact.html" class="hero-btn">
+                <span class="hero-btn-avatar">👤</span>
+                Planifier un rendez-vous
+            </a>
+
+            <!-- Badge Orias -->
+            <div class="hero-orias">
+                <span class="orias-logo">
+                    <svg width="60" height="18" viewBox="0 0 60 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="14" font-size="13" font-weight="bold" fill="#E8A020" font-family="sans-serif">orias</text>
+                        <rect x="38" y="4" width="3" height="10" fill="#E8A020" rx="1"/>
+                        <rect x="43" y="2" width="3" height="12" fill="#E8A020" rx="1"/>
+                        <rect x="48" y="6" width="3" height="8" fill="#E8A020" rx="1"/>
+                    </svg>
+                </span>
+                <span class="orias-number">N°: 21005484</span>
+            </div>
+
+            <!-- Stats -->
+            <div class="hero-stats">
+                <span>✔ Mieux qu'une banque privée</span>
+                <span>✔ Hauts rendements & flexibilité</span>
+                <span>✔ Frais parmi les plus bas du marché</span>
+            </div>
+
+        </div>
+
+        <!-- Section image avec menu vertical -->
+        <div class="hero-bottom">
+            <div class="hero-image">
+                <img src="img/img-heros.png" alt="Conseiller financier">
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/nav.js"></script>
 </body>
 </html>
