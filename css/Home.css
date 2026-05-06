@@ -289,7 +289,7 @@
     justify-content: center;
     gap: 30px;
 
-    font-size: 13px;
+    font-size: 16px;
     font-family: "Glacial Indifference", sans-serif;
     color: rgba(255,255,255,0.85);
 }
@@ -631,7 +631,6 @@
     grid-template-columns: repeat(3, 1fr);
     max-width: 1100px;
     margin: 0 auto 60px;
-    border: 1px solid rgba(255,255,255,0.07);
     border-top: none;
     border-radius: 0 0 16px 16px;
     overflow: hidden;
@@ -662,4 +661,221 @@
     font-family: "Glacial Indifference", sans-serif;
     font-size: 12px;
     color: rgba(255,255,255,0.45);
+}
+
+/* ----------- SECTION INVESTISSEMENTS ---------------------*/
+ 
+.inv-section {
+    padding: 80px 24px 100px;
+}
+ 
+/* ── Header ── */
+.inv-header {
+    text-align: center;
+    margin-bottom: 56px;
+}
+ 
+.inv-badge {
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Glacial Indifference", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin-bottom: 22px;
+}
+ 
+.inv-title {
+    font-family: 'LT Remark', sans-serif;
+    font-size: clamp(28px, 4vw, 46px);
+    font-weight: 200;
+    color: #fff;
+    line-height: 1.22;
+    letter-spacing: -0.03em;
+    margin: 0 0 16px;
+}
+ 
+.inv-title em {
+    font-style: italic;
+    color: #7ef3f5;
+}
+ 
+.inv-subtitle {
+    font-family: "Glacial Indifference", sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.55);
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.75;
+}
+ 
+/* ── Grid : 1 colonne sur desktop ── */
+.inv-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+ 
+/* ── Card ── */
+.inv-card {
+    background: #6B6B80;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    min-height: 320px;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+}
+ 
+.inv-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.28);
+}
+ 
+/* Variante : image à droite, texte à gauche */
+.inv-card--reverse {
+    grid-template-columns: 1fr 280px;
+}
+ 
+.inv-card--reverse .inv-card-visual {
+    order: 2;
+}
+ 
+.inv-card--reverse .inv-card-body {
+    order: 1;
+}
+ 
+/* ── Visuel (image) ── */
+.inv-card-visual {
+    position: relative;
+    background: rgba(255, 255, 255, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+ 
+.inv-card-visual::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 60%, rgba(126, 243, 245, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+ 
+.inv-card-visual img {
+    width: 70%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.3));
+}
+ 
+/* ── Body (texte + CTA) ── */
+.inv-card-body {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+ 
+.inv-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ 
+.inv-card-title {
+    font-family: 'LT Remark', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+ 
+.inv-card-desc {
+    font-family: "Glacial Indifference", sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.7;
+    margin: 0;
+}
+ 
+/* ── Checklist ── */
+.inv-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+ 
+.inv-checklist li {
+    font-family: "Glacial Indifference", sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+ 
+.inv-check-icon {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: rgba(126, 243, 245, 0.15);
+    border: 1px solid rgba(126, 243, 245, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 9px;
+    color: #7ef3f5;
+}
+ 
+/* ── CTA ── */
+.inv-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    color: #1E1E1E;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: "Glacial Indifference", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    align-self: flex-start;
+    transition: background 0.2s, transform 0.2s;
+    white-space: nowrap;
+}
+ 
+.inv-cta:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+ 
+.inv-avatar {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #330867;
+    color: white;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
 }

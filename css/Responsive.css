@@ -75,3 +75,42 @@
     border-bottom: none;
   }
 }
+/* ----------- solution ---------------- */
+
+@media (max-width: 768px) {
+ 
+    .inv-section {
+        padding: 60px 16px 80px;
+    }
+ 
+    .inv-header {
+        margin-bottom: 36px;
+    }
+ 
+    /* Cards en colonne sur mobile */
+    .inv-card,
+    .inv-card--reverse {
+        grid-template-columns: 1fr;
+    }
+ 
+    .inv-card--reverse .inv-card-visual {
+        order: 0;
+    }
+ 
+    .inv-card--reverse .inv-card-body {
+        order: 0;
+    }
+ 
+    .inv-card-visual {
+        height: 180px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+ 
+    .inv-card-body {
+        padding: 22px 20px 20px;
+    }
+ 
+    .inv-card-title {
+        font-size: 20px;
+    }
+}
