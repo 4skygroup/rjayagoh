@@ -8,10 +8,8 @@
     width: 85%;
     max-width: 1200px;
 
-    /* Fond semi-transparent sombre comme la maquette */
-    background: rgba(10, 15, 40, 0.75);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: #f0f0f0;
+    backdrop-filter: blur(20px);
     border-radius: 16px;
     z-index: 1000;
 }
@@ -24,15 +22,9 @@
     padding: 14px 28px;
 }
 
-/* Logo — 2 lignes, blanc */
+/* Logo  */
 .logo {
-    font-size: 16px;
-    font-weight: 800;
-    color: white;
-    text-decoration: none;
-    line-height: 1.2;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    width: 100px;
 }
 
 /* Menu */
@@ -46,7 +38,7 @@
 
 .nav-menu a {
     text-decoration: none;
-    color: rgba(255,255,255,0.85);
+    color: black;
     font-size: 14px;
     font-family: 'Inter', sans-serif;
     transition: color 0.2s;
@@ -209,7 +201,7 @@
     backdrop-filter: blur(10px);
 
     font-size: 14px;
-    margin-top: 160px;
+    margin-top: 130px;
     color: white;
     font-family: "Glacial Indifference", sans-serif;
 }
@@ -219,10 +211,10 @@
 /* Paragraphe */
 .hero-content p {
     font-family: "Glacial Indifference", sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     color: rgba(255,255,255,0.75);
     line-height: 1.7;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto 24px;
 }
 
@@ -353,6 +345,7 @@
     flex: 1;
     display: flex;
     justify-content: center;
+    margin: 40px 0;
 }
 
 .hero-image img {
@@ -448,9 +441,9 @@
 .about {
     display: grid;
     grid-template-columns: 38% 1fr;
+    gap: 30px;
     max-width: 1100px;
     margin: 0 auto;
-    background: #6B6B80;
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid rgba(255,255,255,0.07);
@@ -459,23 +452,23 @@
 /* ── Photo gauche ── */
 .about__photo-wrap {
     position: relative;
-    min-height: 500px;
-    overflow: hidden;
-    background: #0b1020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
 }
- 
+
 .about__photo-wrap img {
-    width: 100%;
+    width: 80%;
     height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    display: block;
+    object-fit: contain;
+    z-index: 2;
 }
- 
+
 /* dégradé bas */
 .about__photo-wrap::after {
     content: '';
-    position: absolute;
+    position: relative;
     bottom: 0; left: 0; right: 0;
     height: 45%;
     background: linear-gradient(to top, rgba(8,12,35,0.92) 0%, transparent 100%);
@@ -488,17 +481,37 @@
     bottom: 1.2rem;
     left: 1.2rem;
     right: 1.2rem;
+
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    z-index: 2;
+    align-items: center;
+
+    padding: 14px 18px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 14px;
+    overflow: hidden;
+
+    z-index: 10;
 }
- 
+
+/* Le fond flouté via pseudo-élément */
+.about__photo-bottom::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('../img/robin.png') center/cover no-repeat;
+    background-color: white;
+    filter: blur(80px) brightness(1.1);
+    transform: scale(1.2);
+    z-index: -1;
+}
+
 .about__name-label {
     font-family: "Glacial Indifference", sans-serif;
+    font-weight: 600;
     font-size: 13px;
     letter-spacing: 0.06em;
-    color: rgba(255,255,255,0.85);
+    color: #000;
 }
  
 .about__socials {
@@ -509,19 +522,19 @@
 .about__social {
     width: 30px;
     height: 30px;
-    border: 1px solid rgba(255,255,255,0.22);
+    color: #000;
+    border: 1px solid rgba(0,0,0,0.2);
     border-radius: 7px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255,255,255,0.65);
     text-decoration: none;
     transition: border-color 0.2s, color 0.2s;
 }
  
 .about__social:hover {
-    border-color: rgba(255,255,255,0.55);
-    color: #fff;
+    color: #000;
+    border-color: rgba(0,0,0,0.5);
 }
  
 /* ── Contenu droit ── */
@@ -530,15 +543,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: #f0f0f0;
 }
  
 /* Titre — utilise LT Remark de Style.css */
 .about__title {
     font-family: 'LT Remark', sans-serif;
-    font-size: 2.05rem;
+    font-size: 2.4rem;
     font-weight: 200;
     letter-spacing: -0.03em;
-    color: #ffffff;
+    color: black;
     line-height: 1.28;
     margin: 0 0 1.6rem;
 }
@@ -553,9 +567,9 @@
  
 .about__body p {
     font-family: "Glacial Indifference", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.85;
-    color: rgba(255,255,255,0.55);
+    color: black;
     margin: 0;
 }
  
@@ -572,9 +586,9 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: white;
     color: #1E1E1E;
     padding: 10px 20px;
+    border: 1px solid gray;
     border-radius: 30px;
     text-decoration: none;
     font-family: "Glacial Indifference", sans-serif;
@@ -585,7 +599,7 @@
 }
  
 .about__btn-rdv:hover {
-    background: #f0f0f0;
+    background: gray;
     transform: translateY(-2px);
 }
  
@@ -607,11 +621,10 @@
     display: inline-flex;
     align-items: center;
     gap: 7px;
-    background: transparent;
-    color: rgba(255,255,255,0.75);
+    color: black;
     padding: 10px 20px;
     border-radius: 30px;
-    border: 1px solid rgba(255,255,255,0.18);
+    border: 1px solid gray;
     text-decoration: none;
     font-family: "Glacial Indifference", sans-serif;
     font-size: 13px;
@@ -620,8 +633,8 @@
 }
  
 .about__btn-ghost:hover {
-    border-color: rgba(255,255,255,0.45);
-    color: #fff;
+    border-color: gray;
+    color: gray;
     transform: translateY(-2px);
 }
  
@@ -666,7 +679,7 @@
 /* ----------- SECTION INVESTISSEMENTS ---------------------*/
  
 .inv-section {
-    padding: 80px 24px 100px;
+    padding: 0px 24px;
 }
  
 /* ── Header ── */
@@ -677,9 +690,10 @@
  
 .inv-badge {
     display: inline-block;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    background: rgba(255, 255, 255, 0.08);
-    color: rgba(255, 255, 255, 0.8);
+    align-self: flex-start;
+    border: 1px solid #6B6B80;
+    background-color: grey;
+    color: black;
     font-family: "Glacial Indifference", sans-serif;
     font-size: 12px;
     letter-spacing: 0.08em;
@@ -690,7 +704,7 @@
  
 .inv-title {
     font-family: 'LT Remark', sans-serif;
-    font-size: clamp(28px, 4vw, 46px);
+    font-size: clamp(28px, 4vw, 50px);
     font-weight: 200;
     color: #fff;
     line-height: 1.22;
@@ -705,9 +719,9 @@
  
 .inv-subtitle {
     font-family: "Glacial Indifference", sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     color: rgba(255, 255, 255, 0.55);
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     line-height: 1.75;
 }
@@ -729,7 +743,7 @@
     border: 1px solid rgba(255, 255, 255, 0.12);
     display: grid;
     grid-template-columns: 280px 1fr;
-    min-height: 320px;
+    min-height: 300px;
     transition: transform 0.25s ease, border-color 0.25s ease;
 }
  
@@ -785,7 +799,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 18px;
 }
  
 .inv-card-text {
@@ -796,7 +810,7 @@
  
 .inv-card-title {
     font-family: 'LT Remark', sans-serif;
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 200;
     color: #ffffff;
     margin: 0;
@@ -805,7 +819,7 @@
  
 .inv-card-desc {
     font-family: "Glacial Indifference", sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     color: rgba(255, 255, 255, 0.55);
     line-height: 1.7;
     margin: 0;
@@ -823,7 +837,7 @@
  
 .inv-checklist li {
     font-family: "Glacial Indifference", sans-serif;
-    font-size: 13px;
+    font-size: 16px;
     color: rgba(255, 255, 255, 0.75);
     display: flex;
     align-items: center;
@@ -878,4 +892,166 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+}
+
+/* ---------- SECTION FRAIS + FEATURES ------------------ */
+
+.frais-section {
+    padding: 80px 24px 100px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.frais-header {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.frais-title {
+    font-family: 'LT Remark', sans-serif;
+    font-size: clamp(26px, 4vw, 44px);
+    font-weight: 200;
+    color: #fff;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.frais-title em {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.frais-title--accent {
+    color: #7ef3f5 !important;
+}
+
+.frais-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.frais-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    gap: 8px;
+}
+
+.frais-item:last-child {
+    border-right: none;
+}
+
+.frais-item__label {
+    font-family: "Glacial Indifference", sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.55);
+    font-style: italic;
+    letter-spacing: 0.01em;
+}
+
+.frais-item__value {
+    font-family: 'LT Remark', sans-serif;
+    font-size: clamp(36px, 6vw, 56px);
+    font-weight: 200;
+    color: #ffffff;
+    letter-spacing: -0.04em;
+    line-height: 1;
+}
+
+.frais-disclaimer {
+    font-family: "Glacial Indifference", sans-serif;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    line-height: 1.6;
+    margin: 0 0 56px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 56px;
+}
+
+
+.feat-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.feat-card {
+    background: #6B6B80;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, border-color 0.25s ease;
+    min-height: 400px;
+}
+
+.feat-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+.feat-card__visual {
+    position: relative;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    overflow: hidden;
+}
+
+.feat-card__visual::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(126, 243, 245, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.feat-card__visual img {
+    height: 210px;
+    width: auto;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.35));
+}
+
+.feat-card__body {
+    padding: 22px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+}
+
+.feat-card__title {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.45;
+    letter-spacing: 0.01em;
+}
+
+.feat-card__desc {
+    font-family: "Glacial Indifference", sans-serif;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.7;
+    margin: 0;
 }
