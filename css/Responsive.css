@@ -32,3 +32,46 @@
     gap: 10px;
   }
 }
+
+/* -------------about -----------------*/
+
+@media (max-width: 768px) {
+ 
+  .press-bar {
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+ 
+  .about {
+    grid-template-columns: 1fr;
+    margin: 0 16px;
+    border-radius: 12px;
+  }
+ 
+  .about__photo-wrap {
+    min-height: 260px;
+  }
+ 
+  .about__content {
+    padding: 2rem 1.5rem;
+  }
+ 
+  .about__title {
+    font-size: 1.55rem;
+  }
+ 
+  .about-stats {
+    grid-template-columns: 1fr;
+    margin: 0 16px 40px;
+  }
+ 
+  .about-stat {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+ 
+  .about-stat:last-child {
+    border-bottom: none;
+  }
+}
