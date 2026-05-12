@@ -151,3 +151,28 @@
         font-size: 14px;
     }
 }
+
+/* ── Process & Avantages – mobile ── */
+@media (max-width: 768px) {
+ 
+  .process-inner {
+    grid-template-columns: 1fr;
+  }
+ 
+  .process-visual {
+    aspect-ratio: auto;
+    height: 220px;
+  }
+ 
+  .avantages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+ 
+@media (max-width: 480px) {
+ 
+  .avantages-grid {
+    grid-template-columns: 1fr;
+  }
+}
+ 
