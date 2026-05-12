@@ -176,3 +176,22 @@
   }
 }
  
+/* Entreprise */
+@media (max-width: 768px) {
+  .entreprises-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+  }
+}
+
+/* faq */
+@media (max-width: 768px) {
+  .faq-wrapper {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .faq-left {
+    position: static;
+  }
+}
