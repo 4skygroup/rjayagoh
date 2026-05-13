@@ -45,7 +45,7 @@
 }
 
 .nav-menu a:hover {
-    color: white;
+    color: gray;
 }
 
 /* CTA */
@@ -91,14 +91,25 @@
     position: absolute;
     top: calc(100% + 10px);
     left: 0;
+
+    /* background: #f0f0f0; */
     background: rgba(10, 15, 40, 0.95);
     backdrop-filter: blur(12px);
+
     list-style: none;
     padding: 10px;
-    display: none;
     border-radius: 12px;
     border: 1px solid rgba(255,255,255,0.1);
     min-width: 200px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0.25s;
 }
 
 .dropdown-menu li {
@@ -110,6 +121,7 @@
     padding: 6px 10px;
     display: block;
     border-radius: 8px;
+    transition: 0.2s ease;
 }
 
 .dropdown-menu li a:hover {
@@ -118,7 +130,9 @@
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 /* Hamburger */
@@ -170,12 +184,6 @@
 .hero-overlay {
     position: absolute;
     inset: 0;
-    /* background: linear-gradient(
-        120deg,
-        rgba(0,0,40,0.97) 0%,
-        rgba(10,30,80,0.88) 50%,
-        rgba(0,0,40,0.97) 100%
-    ); */
     z-index: 1;
 }
 
