@@ -481,7 +481,7 @@
 
                 <div class="entreprise-card">
                     <div class="entreprise-logo">
-                        <img src="img/feature1.png" alt="">
+                        <img src="img/4_SKY_GROUP.png" alt="">
                     </div>
                     <p class="entreprise-name">Vauban &amp; Associés</p>
                     <p class="entreprise-desc">
@@ -490,10 +490,9 @@
                     <a href="#" class="entreprise-btn">En savoir plus</a>
                 </div>
 
-                <!-- Deauvhills -->
                 <div class="entreprise-card entreprise-card--highlight">
                     <div class="entreprise-logo entreprise-logo--circle">
-                        <img src="img/feature1.png" alt="Logo Deauvhills">
+                        <img src="img/airjay.png" alt="Logo Deauvhills">
                     </div>
                     <p class="entreprise-name">Deauvhills</p>
                     <p class="entreprise-desc">
@@ -504,7 +503,7 @@
 
                 <div class="entreprise-card">
                     <div class="entreprise-logo">
-                        <img src="img/feature1.png" alt="Logo A2T Invest">
+                        <img src="img/rjayna.png" alt="Logo A2T Invest">
                     </div>
 
                     <p class="entreprise-name">A2T Invest</p>
@@ -596,20 +595,21 @@
     </section>
 
     <section id="contact" class="formulaire">
-        <div style="padding: 0 20px;">
+        <div style="padding: 0 40px;">
             <div class="hero-badge">
                 Planifier un appel et simuler votre investissement
             </div>
             <h2 style="font-family:'Playfair Display', serif; font-size:clamp(28px, 4vw, 44px); font-weight:400; color:#fff; line-height:1.25; margin:0;">
                 Commencez à investir en<br>seulement 3 étapes.
             </h2>
-            <p class="inv-subtitle">
+            <p class="inv-subtitle" style="max-width: 450px; margin: 0;">
                 Gérer votre patrimoine comme un pro, avec un pro.
-                Sans frais cachés, sans contrainte, juste ce que vous méritez pour sécuriser votre avenir financier et celui de votre famille. <br>
+                Sans frais cachés, sans contrainte, juste ce que vous méritez pour sécuriser votre avenir financier et celui de votre famille.<br>
                 <br>
                 → Rendez-vous gratuit et sans engagement.
             </p>
         </div>
+
         <form action="https://formspree.io/f/xjglzekv" method="post" class="contact-form" novalidate>
             <div class="form-row">
                 <div class="form-group">
@@ -622,12 +622,16 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="entreprise">Nom de l'entreprise</label>
-                <input type="text" id="entreprise" name="entreprise" placeholder="Acme Corp.">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="jean@example.com" required>
             </div>
             <div class="form-group">
                 <label for="telephone">Numéro de téléphone</label>
                 <input type="text" id="telephone" name="telephone" placeholder="06 00 00 00 00">
+            </div>
+            <div class="form-group">
+                <label for="entreprise">Nom de l'entreprise</label>
+                <input type="text" id="entreprise" name="entreprise" placeholder="Acme Corp.">
             </div>
             <div class="form-group">
                 <label for="expertise">Expertise requise</label>
@@ -669,7 +673,9 @@
                 placeholder="Parlez-nous de votre projet, vos objectifs, votre situation actuelle…"></textarea>
             </div>
 
-            <button type="submit" class="btn-submit">Envoyer</button>
+            <button type="button" class="btn-submit" id="btn-calendly">
+                Choisir un créneau →
+            </button>
             <p class="form-mention">Rendez-vous sans engagement · Réponse sous 24h</p>
         </form>
     </section>
@@ -745,6 +751,8 @@
         </svg>
     </a>
 
-    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>

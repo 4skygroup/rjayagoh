@@ -28,3 +28,31 @@ document.querySelectorAll('.faq-question').forEach(button => {
     }
   });
 });
+
+/* calendly */
+
+document.getElementById('btn-calendly').addEventListener('click', function () {
+    const nom = document.getElementById('nom').value.trim();
+    const prenom = document.getElementById('prenom').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    if (!nom || !prenom || !email) {
+        alert('Merci de remplir au moins votre nom, prénom et email.');
+        return;
+    }
+
+    const form = document.querySelector('.contact-form');
+    fetch(form.action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+    });
+
+    Calendly.initPopupWidget({
+        url: 'https://calendly.com/robbinjamesagoh/30min',
+        prefill: {
+            name: prenom + ' ' + nom,
+            email: email
+        }
+    });
+});
