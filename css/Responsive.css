@@ -177,11 +177,35 @@
 }
  
 /* Entreprise */
-@media (max-width: 768px) {
-  .entreprises-grid {
-    grid-template-columns: 1fr;
-    max-width: 360px;
-  }
+
+@media screen and (max-width: 992px) {
+    .entreprises-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #entreprises {
+        padding: 70px 0;
+    }
+    .entreprises-grid {
+        grid-template-columns: 1fr;
+    }
+    .entreprise-card {
+        padding: 36px 24px 28px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .entreprises-title {
+        font-size: 28px;
+    }
+    .entreprise-btn {
+        width: 100%;
+    }
+
 }
 
 /* faq */
@@ -194,4 +218,37 @@
   .faq-left {
     position: static;
   }
+}
+
+/* ── formulaire ── */
+
+@media (max-width: 900px) {
+    .formulaire {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        padding: 60px 24px;
+    }
+
+    .formulaire > div {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 600px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact-form {
+        padding: 28px 20px;
+        border-radius: 12px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
 }
