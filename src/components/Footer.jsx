@@ -5,12 +5,12 @@ export default function Footer() {
 
         {/* Col 1 : Brand */}
         <div className="footer__brand">
-          <div className="footer__logo">Robbin<br />James.</div>
+          <div className="footer__logo">Robbin-James.</div>
           <p className="footer__desc">
-            Entrepreneur dans la finance et conseiller en gestion de patrimoine depuis +10 ans, je vous donne un accès exclusif aux meilleurs solutions d'investissements du marché pour construire et sécuriser votre avenir.
+            Entrepreneur dans le project management et le conseil stratégique depuis plus de 5 ans, J'orchestre le déploiement opérationnel et les solutions d'affaires les plus performantes du marché pour structurer, pérenniser et propulser votre avenir économique. Pas de fioritures, une exécution millimétrée.
           </p>
           <div className="footer__socials">
-            <a href="#" className="footer__social-link">
+            <a href="https://www.linkedin.com/in/robbin-james-agoh-adedze-86a7902b7?utm_source=share_via&utm_content=profile&utm_medium=member_ios" className="footer__social-link">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                 <rect x="2" y="9" width="4" height="12" />
@@ -18,7 +18,7 @@ export default function Footer() {
               </svg>
               Robbin-James
             </a>
-            <a href="#" className="footer__social-link">
+            <a href="https://www.instagram.com/rjayagoh?igsh=anNocGxmdDFqc3J3" className="footer__social-link">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
@@ -27,6 +27,7 @@ export default function Footer() {
               Robbin-James
             </a>
           </div>
+          <p className="footer__desc">contact@rjayagoh.com</p>
         </div>
 
         {/* Col 2 : Navigation */}
@@ -43,7 +44,7 @@ export default function Footer() {
         <nav className="footer__nav" aria-label="Liens utiles">
           <h3 className="footer__nav-title">Liens utiles</h3>
           <ul>
-            {['Avis clients', 'Médias', 'FAQ', 'LinkedIn', 'Instagram', 'Mail'].map((item) => (
+            {['Avis clients', 'FAQ', 'LinkedIn', 'Instagram', 'Mail'].map((item) => (
               <li key={item}><a href="#">{item}</a></li>
             ))}
           </ul>

@@ -7,8 +7,8 @@
 
 @font-face {
   font-family: "Glacial Indifference";
-  src: url("./fonts/GlacialIndifference-Regular.woff2") format("woff2"),
-       url("./fonts/GlacialIndifference-Regular.woff") format("woff");
+    src: url("../fonts/GlacialIndifference-Regular.otf") format("woff2"),
+     url("../fonts/GlacialIndifference-Regular.otf") format("woff");
   font-weight: normal;
   font-style: normal;
 }

@@ -1,7 +1,12 @@
 export default function Contact() {
+
   const handleCalendly = () => {
     if (window.Calendly) {
-      window.Calendly.initPopupWidget({ url: 'https://calendly.com/TON_LIEN_ICI' });
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/robbinjamesagoh/30min'  // ← corrigé
+      });
+    } else {
+      window.open('https://calendly.com/robbinjamesagoh/30min', '_blank');  // ← corrigé
     }
   };
 
@@ -9,15 +14,18 @@ export default function Contact() {
     <section id="contact" className="formulaire">
       <div style={{ padding: '0 40px' }}>
         <div className="hero-badge">
-          Planifier un appel et simuler votre investissement
+          Planifier un call stratégique
         </div>
         <h2 style={{ fontFamily: "'Playfair Display', serif", fontSize: 'clamp(28px, 4vw, 44px)', fontWeight: 400, color: '#fff', lineHeight: 1.25, margin: 0 }}>
-          Commencez à investir en<br />seulement 3 étapes.
+          Lancez votre projet en <br/> seulement 3 étapes.
         </h2>
+
         <p className="inv-subtitle" style={{ maxWidth: '450px', margin: 0 }}>
-          Gérer votre patrimoine comme un pro, avec un pro.
-          Sans frais cachés, sans contrainte, juste ce que vous méritez pour sécuriser votre avenir financier et celui de votre famille.<br />
+          <br/>
+          Pilotez vos actifs et vos projets comme un pro, avec un pro.
+          Pas de lignes inutiles, pas de perte de temps, juste l'exécution millimétrée que vous méritez pour structurer, sécuriser et propulser votre avenir et celui de vos proches
           <br />
+          <br/>
           → Rendez-vous gratuit et sans engagement.
         </p>
       </div>

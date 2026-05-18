@@ -2,35 +2,48 @@ import sky from '../assets/4_SKY_GROUP.png';
 import airjay from '../assets/airjay.png';
 import rjayna from '../assets/rjayna.png';
 import la2g from '../assets/LA2G.png';
+import playtosky from '../assets/playtosky.png';
 
 const entreprises = [
   {
     img: sky,
     alt: '4 SKY GROUP',
-    name: 'Vauban Associés',
-    desc: 'Gestion privée, épargne, placements financiers et fiscalité.',
+    name: '4 SKY GROUP',
+    desc: 'Société de Project Management et de Strategy Consulting',
     highlight: false,
+    link: 'https://4skygroup.com/',
   },
   {
     img: airjay,
-    alt: 'Logo Deauvhills',
-    name: 'Deauvhills',
-    desc: 'Location courte durée clé en main et gestion de biens immobiliers.',
+    alt: 'Airjay',
+    name: 'AIRJAY GROUP',
+    desc: 'Société de participation (Holding)\n',
     highlight: true,
+    link: '#',
   },
   {
     img: rjayna,
-    alt: 'Logo A2T Invest',
-    name: 'A2T Invest',
-    desc: 'Holding dédiée aux investissements immobiliers et financiers.',
+    alt: 'RJAYNA',
+    name: 'RJAYNA',
+    desc: 'Société de Project Management spécialisée dans le secteur du Luxe.',
     highlight: false,
+    link: '#',
   },
   {
     img: la2g,
     alt: 'LA2G',
-    name: 'Vauban & Associés',
-    desc: 'Gestion privée, épargne, placements financiers et fiscalité.',
+    name: 'LA2G',
+    desc: 'Société de Strategy Consulting.',
     highlight: false,
+    link: '#',
+  },
+  {
+    img: playtosky,
+    alt: 'playtosky',
+    name: 'Play To Sky',
+    desc: 'Groupe de Marketing\n',
+    highlight: false,
+    link: 'https://www.playtosky.com/',
   },
 ];
 
@@ -47,7 +60,7 @@ export default function Entreprises() {
               </div>
               <p className="entreprise-name">{e.name}</p>
               <p className="entreprise-desc">{e.desc}</p>
-              <a href="#" className="entreprise-btn">En savoir plus</a>
+              <a href={e.link} className="entreprise-btn">En savoir plus</a>
             </div>
           ))}
         </div>

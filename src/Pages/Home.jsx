@@ -6,7 +6,7 @@ import Frais from '../components/Frais';
 import Process from '../components/Process';
 import Avantages from '../components/Avantages';
 import Entreprises from '../components/Entreprises';
-import FAQ from '../components/FAQ';
+import FAQ from '../components/Faq.jsx';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import WhatsAppBtn from '../components/WhatsAppBtn';
