@@ -4,11 +4,12 @@ export default function Contact() {
     const calendlyRef = useRef(null);
     const initialized = useRef(false);
 
+    // https://calendly.com/rjayagoh/nouvelle-reunion
     useEffect(() => {
         if (window.Calendly && calendlyRef.current && !initialized.current) {
             initialized.current = true;
             window.Calendly.initInlineWidget({
-                url: 'https://calendly.com/robbinjamesagoh/30min?hide_gdpr_banner=1&primary_color=c9a84c',
+                url: 'https://calendly.com/rjayagoh/nouvelle-reunion',
                 parentElement: calendlyRef.current,
             });
         }
