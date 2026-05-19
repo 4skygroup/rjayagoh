@@ -34,7 +34,7 @@ export default function Footer() {
         <nav className="footer__nav" aria-label="Navigation principale">
           <h3 className="footer__nav-title">Navigation</h3>
           <ul>
-            {['Qui suis-je ?', 'Assurance-vie', 'Défiscalisation', 'Produits structurés', 'Portefeuille sur-mesure', 'Fonctionnement', 'Mes entreprises', 'Prendre rendez-vous'].map((item) => (
+            {['Qui suis-je ?', 'Analyse et Audit', 'Pilotage Stratégique', 'Optimisation Opérationnelle', 'Ingénierie de Réussite', 'Fonctionnement', 'Mes entreprises', 'Prendre rendez-vous'].map((item) => (
               <li key={item}><a href="#">{item}</a></li>
             ))}
           </ul>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import robin from '../assets/robin.png';
+import robbin from '../assets/robbin.png';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +11,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <a href="index.html">
-            <img src={robin} className="logo" alt="logo" />
+            <img src={robbin} className="logo" alt="logo" />
           </a>
 
           {/* Menu desktop */}
@@ -22,10 +22,10 @@ export default function Navbar() {
             <li className="dropdown">
               <a href="#solutions">Solutions ▾</a>
               <ul className="dropdown-menu">
-                <li><a href="#solutions">Assurance vie</a></li>
-                <li><a href="#solutions">Défiscalisation</a></li>
-                <li><a href="#solutions">Produits structurés</a></li>
-                <li><a href="#solutions">Portefeuille sur-mesure</a></li>
+                <li><a href="#solutions">Analyse et Audit</a></li>
+                <li><a href="#solutions">Pilotage Stratégique</a></li>
+                <li><a href="#solutions">Optimisation</a></li>
+                <li><a href="#solutions">Ingénierie de Réussite</a></li>
               </ul>
             </li>
             <li><a href="#process">Fonctionnement</a></li>

@@ -145,7 +145,7 @@
 .hamburger span {
     width: 25px;
     height: 2px;
-    background: white;
+    background: black;
     margin: 4px 0;
     border-radius: 2px;
 }
@@ -156,10 +156,16 @@
     flex-direction: column;
     background: rgba(10, 15, 40, 0.95);
     position: absolute;
-    top: 70px;
+    top: 100%;
+    left: 0;
     width: 100%;
     padding: 20px;
     border-radius: 0 0 16px 16px;
+    box-sizing: border-box;
+}
+
+.mobile-menu.open {
+    display: flex;
 }
 
 .mobile-menu a {
@@ -508,7 +514,7 @@
     content: '';
     position: absolute;
     inset: 0;
-    /*background: url('../img/robin.png') center/cover no-repeat;*/
+    /*background: url('../img/robbin.png') center/cover no-repeat;*/
     background-color: white;
     filter: blur(80px) brightness(1.1);
     transform: scale(1.2);
@@ -1585,7 +1591,7 @@ body {
   padding: 0 40px 56px;
   display: grid;
   grid-template-columns: 5fr 1fr 1fr;
-  gap: 48px;
+  gap: 80px;
 }
 
 /* ─── Brand column ─── */

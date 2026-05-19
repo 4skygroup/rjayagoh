@@ -1,4 +1,4 @@
-import robin from '../assets/robin.png';
+import robin from '../assets/robbin.png';
 
 export default function About() {
   return (
