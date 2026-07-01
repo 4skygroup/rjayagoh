@@ -1581,7 +1581,7 @@ body {
   background: #0d1420;
   color: #c8cdd8;
   overflow: hidden;
-  padding: 60px 0;
+  padding: 60px 0 20px 0;
 }
 
 /* ─── Inner grid ─── */
@@ -1702,6 +1702,120 @@ body {
   opacity: 0.7;
 }
 
+.created-by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    color: #fff;
+}
+
+.created-by__label {
+    font-size: 0.875rem;
+    font-weight: 200;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* Logo */
+
+.created-by__logo-link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.created-by__logo-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    padding: 4px;
+    background: linear-gradient(135deg, #f9fafb, #f3f4f6);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    transition: box-shadow 0.7s ease;
+}
+
+.created-by__logo-link:hover .created-by__logo-container {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.created-by__logo {
+    height: 64px;
+    width: auto;
+    opacity: 0.85;
+    transform: scale(1.4);
+    filter: grayscale(100%);
+    transition: all 0.7s ease;
+    display: block;
+}
+
+.created-by__logo-link:hover .created-by__logo {
+    opacity: 1;
+    filter: grayscale(0%);
+}
+
+.created-by__logo-overlay {
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background: linear-gradient(
+            45deg,
+            rgba(59, 130, 246, 0.05),
+            rgba(168, 85, 247, 0.05)
+    );
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.created-by__logo-link:hover .created-by__logo-overlay {
+    opacity: 1;
+}
+
+/* Divider */
+
+.created-by__divider {
+    width: 1px;
+    height: 32px;
+    background: linear-gradient(
+            to bottom,
+            transparent,
+            #d1d5db,
+            transparent
+    );
+}
+
+/* Play to Sky */
+
+.created-by__text-link {
+    text-decoration: none;
+}
+
+.created-by__text {
+    position: relative;
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: 200;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #fff;
+    transition: color 0.5s ease;
+}
+
+.created-by__underline {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(to right, #fff, #fff);
+    transition: width 0.5s ease;
+}
+
+.created-by__text-link:hover .created-by__underline {
+    width: 100%;
+}
+
 /* =============================================
    BOUTON WHATSAPP FIXE
    ============================================= */
@@ -1746,31 +1860,4 @@ body {
   0%   { transform: scale(1); opacity: 0.5; }
   70%  { transform: scale(1.6); opacity: 0; }
   100% { transform: scale(1.6); opacity: 0; }
-}
-
-/* ─── Responsive ─── */
-@media (max-width: 860px) {
-  .footer__inner {
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-  }
-  .footer__brand {
-    grid-column: 1 / -1;
-  }
-}
-
-@media (max-width: 540px) {
-  .footer__inner {
-    grid-template-columns: 1fr;
-    padding: 0 24px 48px;
-  }
-  .footer__bottom {
-    padding: 16px 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-  .footer__watermark {
-    font-size: 18vw;
-  }
 }

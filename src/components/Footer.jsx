@@ -1,3 +1,5 @@
+import CreatedBy from "./CreatedBy.js";
+
 export default function Footer() {
   return (
     <footer className="footer">
@@ -52,11 +54,7 @@ export default function Footer() {
 
       </div>
 
-      {/* Bottom bar */}
-      <div className="footer__bottom">
-        <p>© 2026 Robbin-James – Tous droits réservés – Site créé par <em>Antoine CHEN</em></p>
-        <a href="#" className="footer__legal">Politique de confidentialité &amp; Cookies</a>
-      </div>
+      <CreatedBy />
     </footer>
   );
 }
