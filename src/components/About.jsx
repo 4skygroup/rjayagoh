@@ -1,4 +1,3 @@
-import robin from '../assets/robbin.png';
 
 export default function About() {
   return (
@@ -8,7 +7,8 @@ export default function About() {
 
         {/* Colonne gauche : photo */}
         <div className="about__photo-wrap">
-          <img src={robin} alt="Robbin-James AGOH" />
+          <img src="/robbin.jpg" alt="Robbin-James AGOH" />
+
           <div className="about__photo-bottom">
             <span className="about__name-label">Robbin-James AGOH</span>
             <div className="about__socials">
