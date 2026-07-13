@@ -1,3 +1,4 @@
+import ButtonAvatar from "./ButtonAvatar.js";
 
 export default function About() {
   return (
@@ -12,14 +13,14 @@ export default function About() {
           <div className="about__photo-bottom">
             <span className="about__name-label">Robbin-James AGOH</span>
             <div className="about__socials">
-              <a className="about__social" href="#" aria-label="Instagram">
+              <a className="about__social" href="https://www.instagram.com/rjayagoh?igsh=eHdnY2xmdHIyeTc1" aria-label="Instagram">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                   <rect x="2" y="2" width="20" height="20" rx="5" />
                   <circle cx="12" cy="12" r="4.5" />
                   <circle cx="17.4" cy="6.6" r="1" fill="currentColor" stroke="none" />
                 </svg>
               </a>
-              <a className="about__social" href="#" aria-label="LinkedIn">
+              <a className="about__social" href="https://www.linkedin.com/in/robbin-james-agoh-adedze-86a7902b7?utm_source=share_via&utm_content=profile&utm_medium=member_ios" aria-label="LinkedIn">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
                   <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
                   <rect x="2" y="9" width="4" height="12" />
@@ -49,7 +50,7 @@ export default function About() {
 
           <div className="about__actions">
             <a href="#contact" className="about__btn-rdv">
-              <span className="about__btn-avatar">👤</span>
+              <ButtonAvatar />
               Planifier un rendez-vous
             </a>
             <a href="#" className="about__btn-ghost">

@@ -1,4 +1,5 @@
 import robin from '../assets/robbin.png';
+import ButtonAvatar from "./ButtonAvatar.js";
 
 export default function Hero() {
   return (
@@ -9,7 +10,7 @@ export default function Hero() {
       <div className="hero-content">
 
         <div className="hero-badge">
-          Déjà +8 000 clients me font confiance
+          Déjà +1 000 clients me font confiance
         </div>
 
         <h1 className="main-title">
@@ -21,7 +22,7 @@ export default function Hero() {
         </p>
 
         <a href="#contact" className="hero-btn">
-          <span className="hero-btn-avatar">👤</span>
+          <ButtonAvatar />
           Planifier un rendez-vous
         </a>
 

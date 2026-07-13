@@ -2,6 +2,7 @@ import solution1 from '../assets/solution1.png';
 import solution2 from '../assets/solution2.png';
 import solution3 from '../assets/solution3.png';
 import solution4 from '../assets/solution4.png';
+import ButtonAvatar from "./ButtonAvatar.js";
 
 const cards = [
   {
@@ -92,7 +93,8 @@ export default function Solutions() {
                 </ul>
               </div>
               <a href="#contact" className="inv-cta">
-                <span className="inv-avatar">👤</span> Planifier un rendez-vous
+                <ButtonAvatar />
+                Planifier un rendez-vous
               </a>
             </div>
           </div>

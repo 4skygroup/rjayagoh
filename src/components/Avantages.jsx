@@ -1,3 +1,5 @@
+import ButtonAvatar from "./ButtonAvatar.js";
+
 const avantages = [
   {
     title: 'Visibilité Totale',
@@ -57,7 +59,7 @@ export default function Avantages() {
 
         <div style={{ textAlign: 'center', marginTop: '40px' }}>
           <a href="#contact" className="hero-btn">
-            <span className="cta-avatar">👤</span>
+            <ButtonAvatar />
             Prendre contact avec un expert
           </a>
         </div>
