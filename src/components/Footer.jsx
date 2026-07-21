@@ -7,7 +7,7 @@ export default function Footer() {
 
         {/* Col 1 : Brand */}
         <div className="footer__brand">
-          <div className="footer__logo">Robbin-James.</div>
+          <div className="main-title">Robbin-James.</div>
           <p className="footer__desc">
             Entrepreneur dans le project management et le conseil stratégique depuis plus de 5 ans, J'orchestre le déploiement opérationnel et les solutions d'affaires les plus performantes du marché pour structurer, pérenniser et propulser votre avenir économique. Pas de fioritures, une exécution millimétrée.
           </p>

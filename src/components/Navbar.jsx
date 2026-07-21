@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import robbin from '../assets/robbin.png';
+import ButtonAvatar from "./ButtonAvatar.js";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -33,12 +34,7 @@ export default function Navbar() {
 
           {/* CTA */}
           <a href="#contact" className="cta-button">
-            {/*<ButtonAvatar />*/}
-            <img
-                src="/avatar.png"
-                alt="Avatar"
-                className="hero-btn-avatar"
-            />
+            <ButtonAvatar />
             Planifier un rendez-vous
           </a>
 
