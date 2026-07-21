@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import robbin from '../assets/robbin.png';
-import ButtonAvatar from "./ButtonAvatar.js";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
