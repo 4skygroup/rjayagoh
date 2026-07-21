@@ -515,8 +515,6 @@
     inset: 0;
     /*background: url('../img/robbin.png') center/cover no-repeat;*/
     background-color: white;
-    filter: blur(80px) brightness(1.1);
-    transform: scale(1.2);
     z-index: -1;
 }
 
