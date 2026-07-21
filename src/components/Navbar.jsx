@@ -34,7 +34,12 @@ export default function Navbar() {
 
           {/* CTA */}
           <a href="#contact" className="cta-button">
-            <ButtonAvatar />
+            {/*<ButtonAvatar />*/}
+            <img
+                src="/avatar.png"
+                alt="Avatar"
+                className="hero-btn-avatar"
+            />
             Planifier un rendez-vous
           </a>
 
