@@ -56,7 +56,7 @@ export default function Entreprises() {
           {entreprises.map((e) => (
             <div key={e.name} className={`entreprise-card${e.highlight ? ' entreprise-card--highlight' : ''}`}>
               <div className={`entreprise-logo${e.highlight ? ' entreprise-logo--circle' : ''}`}>
-                <img src={e.img} alt={e.alt} />
+                <img src={e.img} alt={e.alt} loading="lazy" />
               </div>
               <p className="entreprise-name">{e.name}</p>
               <p className="entreprise-desc">{e.desc}</p>

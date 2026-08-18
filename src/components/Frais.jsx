@@ -67,7 +67,7 @@ export default function Frais() {
         {features.map((feat) => (
           <div key={feat.title} className="feat-card">
             <div className="feat-card__visual">
-              <img src={feat.img} alt={feat.alt} />
+              <img src={feat.img} alt={feat.alt} loading="lazy"/>
             </div>
             <div className="feat-card__body">
               <h3 className="feat-card__title">{feat.title}</h3>

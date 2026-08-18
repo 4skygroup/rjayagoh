@@ -16,6 +16,7 @@ export default function CreatedBy() {
                         src="/visuance-logo.webp"
                         alt="Visuance"
                         className="created-by__logo"
+                        loading="lazy"
                     />
                     <div className="created-by__logo-overlay"></div>
                 </div>

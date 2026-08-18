@@ -12,7 +12,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <a href="index.html">
-            <img src={robbin} className="logo" alt="logo" />
+            <img src={robbin} className="logo" alt="logo" loading="lazy" />
           </a>
 
           {/* Menu desktop */}

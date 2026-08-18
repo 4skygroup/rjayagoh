@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rjayagoh.vercel.app/sitemap.xml
+Sitemap: https://rjayagoh.vercel.app/sitemap-images.xml

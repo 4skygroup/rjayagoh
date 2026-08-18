@@ -78,7 +78,7 @@ export default function Solutions() {
         {cards.map((card) => (
           <div key={card.title} className={`inv-card${card.reverse ? ' inv-card--reverse' : ''}`}>
             <div className="inv-card-visual">
-              <img src={card.img} alt={card.alt} />
+              <img src={card.img} alt={card.alt} loading="lazy"/>
             </div>
             <div className="inv-card-body">
               <div className="inv-card-text">

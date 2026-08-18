@@ -38,7 +38,7 @@ export default function Hero() {
       {/* Section image */}
       <div className="hero-bottom">
         <div className="hero-image">
-          <img src={robin} alt="img logo" />
+          <img src={robin} alt="img logo" loading="lazy"/>
         </div>
       </div>
 

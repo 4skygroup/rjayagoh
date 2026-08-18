@@ -1,0 +1,25 @@
+{
+  "name": "RJAYAGOH",
+  "short_name": "RJAYAGOH",
+  "description": "RJAYAGOH — Project Management 360, conseil stratégique, transformation digitale et accompagnement en acquisition d'entreprise.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

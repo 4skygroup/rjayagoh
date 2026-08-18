@@ -4,6 +4,7 @@ function HeroButtonAvatar() {
             src="/img-btn.jpg"
             alt="Avatar"
             className="hero-btn-avatar"
+            loading="lazy"
         />
     );
 }
