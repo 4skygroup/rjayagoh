@@ -27,7 +27,7 @@ const entreprises = [
     name: 'RJAYNA',
     desc: 'Société de Project Management spécialisée dans le secteur du Luxe.',
     highlight: false,
-    link: '#',
+    link: 'https://rjayna.com/',
   },
   {
     img: la2g,
